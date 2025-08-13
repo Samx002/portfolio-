@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - [Seu Nome]</title>
+    <title>Contato - Davi Teixeira</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -13,7 +13,7 @@
 <body>
     <!-- Navegação -->
     <nav class="navbar">
-        <div class="logo">[Seu Nome]</div>
+        <div class="logo">Davi Teixeira</div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#projetos">Projetos</a></li>
@@ -27,26 +27,34 @@
 
     <!-- Contato -->
     <section class="contato">
-        <h2>Entre em Contato</h2>
+        <h2 class="scroll-item">Entre em Contato</h2>
         <div class="contato-content">
-            <form>
-                <input type="text" placeholder="Nome" required>
-                <input type="email" placeholder="E-mail" required>
-                <textarea placeholder="Mensagem" required></textarea>
+            <form action="https://formspree.io/f/[seu-id-formspree]" method="POST">
+                <input type="text" name="name" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <textarea name="message" placeholder="Mensagem" required></textarea>
                 <button type="submit" class="btn">Enviar</button>
             </form>
             <div class="contato-info">
-                <p><i class="fas fa-envelope"></i> [Seu Endereço de E-mail]</p>
-                <p><i class="fab fa-linkedin"></i> <a href="[Seu LinkedIn]" target="_blank">LinkedIn</a></p>
-                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/[seu-número]" target="_blank">[Seu Telefone]</a></p>
+                <p class="scroll-item"><i class="fas fa-envelope"></i> [seu-email@example.com]</p>
+                <p class="scroll-item"><i class="fab fa-linkedin"></i> <a href="[URL do seu LinkedIn]" target="_blank">LinkedIn</a></p>
+                <p class="scroll-item"><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+5515992476271" target="_blank">(15) 99247-6271</a></p>
             </div>
         </div>
     </section>
 
-    <!-- Botão Flutuante WhatsApp -->
-    <a href="https://wa.me/[seu-número]" class="whatsapp-btn" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Botões Flutuantes -->
+    <div class="social-buttons">
+        <a href="https://wa.me/+5515992476271" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://github.com/Samx002" class="github-btn" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="[URL do seu LinkedIn]" class="linkedin-btn" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>
